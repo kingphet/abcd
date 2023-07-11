@@ -1,0 +1,119 @@
+
+
+/* ------------------navslide------------------ */
+.nav_menu{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    justify-content: end;
+    display: none;
+    transition: 1s;
+}
+.nav_menu.show{
+    display: flex;
+}
+.navbar{
+  background-color: var(--darkgay-color);
+   width: 250px;
+   height: 100vh;
+   margin-right: 0;
+   animation: delay;
+   animation-duration: 0.5s;
+}
+@keyframes delay{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+ .nav{
+   width: 100%;
+}
+.nav-bar .closenav{
+    height: 30px;
+    font-size: 40px;
+    padding-left: 1rem;
+    color: var(--white-color);
+}
+.nav-bar ul{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem 1rem;
+}
+.nav-bar ul a{
+    text-decoration: none;
+}
+.nav-bar ul li{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+   font-weight: 600;
+   font-size: 18px;
+   font-weight: 400;
+   transition: 0.5s;
+   cursor: pointer;
+   color: #fff;
+   padding: 0 2rem;
+   text-align: left;
+}
+.nav-bar ul li:hover{
+   background-color: var(--rightblack-color);
+}
+/* ----------------header--------------------- */
+.container{
+    width: 100%;
+}
+.header{
+    height: 100px;
+    background-color: var(--blue-color);
+    color: var(--darkgay-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.645);
+    font-size: 20px;
+    font-weight: 600;
+}
+.logo img{
+    width: 150px;
+    height: 150px;
+}
+.content-list ul{
+    display: flex;
+    list-style: none;
+
+}
+.content-list a{
+    text-decoration: none;
+}
+.content-list ul li{
+    margin-left: 25px;
+    color: var(--darkgay-color);
+    transition: 0.5s;
+}
+.content-list .opennav{
+    display: none;
+    font-size: 25px;
+}
+.content-list ul li:hover{
+    color: rgb(59, 58, 58);
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 750px){
+    .content-list ul{
+        display: none;
+    }
+    .content-list .opennav{
+        display: block;
+    }
+}
+
+
+

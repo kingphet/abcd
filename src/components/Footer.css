@@ -1,0 +1,48 @@
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: var(--darkgay-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer .addess, .contact{
+    text-align: center;
+}
+footer .addess h3, .contact h3{
+    color: var(--white-color);
+}
+footer .addess h4, .contact h4{
+    margin-top: 15px;
+    color: var(--white-color);
+}
+.addess p{
+    margin: 10px 0;
+    color: var(--white-color);
+}
+.contact a{
+    color: #ff2e5f;
+    font-size: 40px;
+    margin: 10px 20px;
+}
+.contact a:hover{
+    transform: scale(1.2);
+    transition: 0,5s;
+}
+
+@media only screen and (max-width: 700px){
+    .contact a{
+        margin: 10px 5px;
+        font-size: 30px;
+    } 
+    .addess p{
+        font-size: 13px;
+    }
+    footer .addess h4, .contact h4{
+        font-size: 15px;
+    }
+    footer .addess h3, .contact h3{
+        font-size: 17px;
+    }
+}

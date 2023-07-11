@@ -1,0 +1,58 @@
+
+.content-contect{
+    background-color: var(--rightblack-color);
+}
+.content-contect .contract{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.content-contect .contract h1{
+    color: var(--white-color);
+}
+
+.big-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.box-1, .box-2{
+    margin: 0 50px;
+}
+
+.map iframe{
+    width: 80%;
+    height: 450px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.645);
+    
+}
+
+@media only screen and (max-width: 1000px){
+    .map iframe{
+        height: 350px;
+    }
+    .content-contect .contract h1{
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .map iframe{
+        width: 90%;
+        height: 300px;
+    }
+    .content-contect .contract h1{
+        font-size: 23px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .map iframe{
+        width: 95%;
+        height: 200px;
+    }
+    .content-contect .contract h1{
+        font-size: 20px;
+    }
+}

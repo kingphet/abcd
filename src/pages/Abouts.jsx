@@ -1,5 +1,5 @@
 import React from 'react'
-import '.About.css'
+import './About.css'
 import Footer from '../components/Footer'
 import datamember from '../data/datamember'
 import datarj from '../data/datarj'
